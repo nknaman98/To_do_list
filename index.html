@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_list_bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 align ="center">To_Do_List</h1>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                <label for="inpNewTask">New Task</label>
+                <input type="text" class="form-control" id="inpNewTask" aria-describedby="newtask_help" placeholder="Enter inpNewTask">
+                <small id="newtask_help" class="form-text text-muted">Description of your task.</small>
+                </div>
+            </div>
+            <!-- <div class="col-2">
+                <button class="btn btn-success">
+                    Add
+                </button>
+            </div> -->
+        </div>
+    </div>
+       <!--  Buttons -->
+       <div class="row px-4">
+        <button class="btn btn-success col m-2" id="btnAdd">
+          Add
+        </button>
+        <button class="btn btn-danger col m-2" id="btnClear">
+          Clear
+        </button>
+       </div>
+
+        <ul class="row list-group m-2"id="ulTasks">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            
+          </ul>
+  
+      </div>
+</body>
+</html>
