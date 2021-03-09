@@ -1,6 +1,6 @@
 let ulTasks = $('#ulTasks')
 let btnAdd = $('#btnAdd')
-let btnReset = $(' btnReset')
+let btnReset = $('#btnReset')
 let btnSort = $('#btnSort')
 let btnCleanup = $('#btnCleanup')
 let inpNewTask = $('#inpNewTask')
@@ -33,7 +33,7 @@ inpNewTask.keypress((e) => {
 // btnAdd.click(() => {
 //     console.log(inpNewTask.val())
 // })
-btnAdd.click(addItem)
- btnReset.click(() => inpNewTask.val(''))
+ btnAdd.click(addItem)
+ btnReset.click(() => {inpNewTask.val('')})
  btnCleanup.click(clearDone)
  btnSort.click(sortTasks)
